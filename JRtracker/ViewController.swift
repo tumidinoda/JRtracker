@@ -44,10 +44,10 @@ class ViewController:   UIViewController,
             let alt =    String(format: "%.1f", loc.altitude)
             let speed =  String(format: "%.1f", loc.speed)
             let course = String(format: "%.1f", loc.course)
-            myInfoBox.text = "long= \(long) •  / lat = \(lat) •  \n" +
-                "alt = \(alt) m \n" +
-                "speed = \(speed) m/s \n" +
-                "course = \(course) •  \n" +
+            myInfoBox.text = "long= \(long) • lat= \(lat) •  \n" +
+                "alt= \(alt) m \n" +
+                "speed= \(speed) m/s \n" +
+                "course= \(course) •  \n" +
             "time = \(loc.timestamp) \n"
             
             // sichtbaren Bereich der Karte (inkl. Zoom) einstellen
