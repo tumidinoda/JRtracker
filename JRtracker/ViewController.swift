@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
+    var myLocMgr = CLLocationManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //ask for permission to use location
+        myLocMgr.requestAlwaysAuthorization()
+        
     }
 
     override func didReceiveMemoryWarning() {

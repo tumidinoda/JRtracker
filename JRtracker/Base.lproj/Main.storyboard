@@ -23,7 +23,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qlR-Ah-COg" userLabel="Tracker Info field">
-                                <rect key="frame" x="16" y="637" width="343" height="30"/>
+                                <rect key="frame" x="16" y="606" width="343" height="61"/>
+                                <color key="backgroundColor" red="1" green="0.6970610832189883" blue="0.00019225223670882308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="eci-in-m28"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>

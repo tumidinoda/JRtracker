@@ -15,6 +15,7 @@
 		E1836AB81F018922002F735D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1836AB61F018922002F735D /* LaunchScreen.storyboard */; };
 		E1836AC31F018922002F735D /* JRtrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1836AC21F018922002F735D /* JRtrackerTests.swift */; };
 		E1836ACE1F018922002F735D /* JRtrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1836ACD1F018922002F735D /* JRtrackerUITests.swift */; };
+		E19A5B0E1F0CF6AF00AD8710 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19A5B0D1F0CF6AF00AD8710 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E1836AC91F018922002F735D /* JRtrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRtrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1836ACD1F018922002F735D /* JRtrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRtrackerUITests.swift; sourceTree = "<group>"; };
 		E1836ACF1F018922002F735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E19A5B0D1F0CF6AF00AD8710 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19A5B0E1F0CF6AF00AD8710 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				E1836AC11F018922002F735D /* JRtrackerTests */,
 				E1836ACC1F018922002F735D /* JRtrackerUITests */,
 				E1836AA81F018922002F735D /* Products */,
+				E19A5B0C1F0CF6AF00AD8710 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				E1836ACF1F018922002F735D /* Info.plist */,
 			);
 			path = JRtrackerUITests;
+			sourceTree = "<group>";
+		};
+		E19A5B0C1F0CF6AF00AD8710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E19A5B0D1F0CF6AF00AD8710 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +210,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = MXEMDN7USP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E1836ABD1F018922002F735D = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -520,6 +537,7 @@
 				E1836AD41F018923002F735D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1836AD51F018923002F735D /* Build configuration list for PBXNativeTarget "JRtrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +546,7 @@
 				E1836AD71F018923002F735D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1836AD81F018923002F735D /* Build configuration list for PBXNativeTarget "JRtrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +555,7 @@
 				E1836ADA1F018923002F735D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
